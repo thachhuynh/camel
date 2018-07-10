@@ -1,0 +1,39 @@
+group 'camel-training'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+
+
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-spring
+    compile group: 'org.apache.camel', name: 'camel-spring', version: '2.22.0'
+
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-flatpack
+    compile group: 'org.apache.camel', name: 'camel-flatpack', version: '2.22.0'
+
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-spring-boot-starter
+    compile group: 'org.apache.camel', name: 'camel-spring-boot-starter', version: '2.22.0'
+
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-spring-javaconfig
+    compile group: 'org.apache.camel', name: 'camel-spring-javaconfig', version: '2.22.0'
+
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-ftp
+    compile group: 'org.apache.camel', name: 'camel-ftp', version: '2.22.0'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.3.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.0.3.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.3.RELEASE'
+
+}
