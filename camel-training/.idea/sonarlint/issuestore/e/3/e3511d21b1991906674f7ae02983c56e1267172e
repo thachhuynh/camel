@@ -1,4 +1,0 @@
-
-squid:UselessImportCheck"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8­ÿ“È,
-hsquid:UselessImportCheck":Remove this unused import 'org.apache.camel.CamelContext'.(¸ò¬ùÿÿÿÿ8­ÿ“È,
-msquid:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÅÔé8­ÿ“È,
