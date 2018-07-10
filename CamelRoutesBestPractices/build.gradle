@@ -1,0 +1,33 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.14.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'com.example.huyvo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.apache.camel:camel-spring-boot-starter:2.21.1')
+	compile('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: "com.fasterxml.jackson.core", module: "jackson-databind"
+    }
+    compile("org.apache.camel:camel-csv:2.21.1")
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
